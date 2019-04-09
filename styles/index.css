@@ -1,0 +1,283 @@
+body {
+    width: 1170px;
+    margin: 0px;
+    padding: 30px;
+    font-family: Open Sans, sans-serif;
+    color: rgb(51, 51, 51);
+}
+header i {
+    background: rgba(19, 187, 230, 0.966);
+    width: 90px;
+	height: 68px;
+    border-radius: 45px;
+    text-align: center;
+    padding-top: 22px;
+    font-size: 46px;
+}
+header {
+    text-align: center; 
+}
+header h1 {
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+header p {
+    font-size: 15px;
+    text-transform: overcase;
+}
+.nav {
+    background:  rgba(19, 187, 230, 0.966);
+    width: 1170px;
+    height: 80px;
+    border-radius: 5px 5px 0px 0px;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    list-style-type:none;
+    margin: 30px 0px 0px 0px;
+}
+.nav li {
+    display: inline-block;
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    padding: 35px 22px;
+}
+.banner {
+    color: white; text-align: center;
+    background-image: url(../images/banner.jpg.jpg); /*картинка не на заднем фоне*/
+    width: 1170px;
+    height: 430px;
+    border-radius: 0px 0px 5px 5px;
+    background-repeat: no-repeat;
+    margin: 0px 0px 40px 0px;
+    
+}
+.banner h1 {
+    font-size: 42px;
+    text-transform: uppercase;
+    padding-top: 150px;
+    margin: 0px
+}
+.banner p {
+    font-size: 21px;
+    font-weight: normal;
+}
+.button {
+    background: rgba(19, 187, 230, 0.966); 
+    width: 90px;
+    height: 20px;
+    color: white; /* Цвет текста */
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 35px; /* Уголки */
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 15px;
+}
+.featured_content {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    text-align: left;
+}
+.button__small {
+    background: rgba(19, 187, 230, 0.966);
+    width: 34px;
+    height: 6px;
+    color: white;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 8px;
+    text-transform: uppercase;
+    padding: 10px;
+}
+.content1, .content2, .content3, .content4 {
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(170, 168, 168);
+    width: 270px;
+    height: 380px;
+}
+.content1, .content2, .content3, .content4 p {
+    font-size: 15px;
+}
+.text {
+   padding: 20px 20px 30px 20px;
+}
+hr {
+    border: none; /*убирает границу*/
+    background-color:  rgb(170, 168, 168); 
+    height: 1px; 
+}
+.raw1 {
+    display: flex;
+    justify-content: left;
+}
+.block1 {
+    width: 570px;
+    height: 430px;
+    margin: 40px 30px 20px 0px;
+    text-align: left;
+}
+.block1_1 {
+    display: flex;
+    flex-flow: row nowrap;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+h2 {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.block1 p {
+    font-size: 13px;
+}
+.block1 h4 {
+    color:  rgba(19, 187, 230, 0.966);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 10px;
+}
+.block1 i {
+    background-color: rgb(78, 78, 78);
+    color: white;
+    width: 70px;
+    height: 47px;
+    border-radius: 15px;
+    float: left;
+    margin: 25px 30px 0px 0px;
+    text-align: center;
+    font-size: 24px;
+    padding-top: 23px;
+}
+.bl1, .bl2, .bl3, .bl4, .bl5, .bl6 {
+    border-style: solid;
+    border-color: white;
+    width: 270px;
+}
+.block2 {
+    width: 570px;
+    height: 430px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(170, 168, 168);
+    margin: 40px 0px 20px 0px;
+}
+.accordionholder {
+    width: 570px;
+    margin: 30px auto;
+}
+.accordionholder input {
+    display: none;
+}
+.accordion label {
+    display: block;
+    position: relative;
+    padding: 10px;
+    cursor: pointer;
+    background: rgb(236, 156, 156);
+    transition: all 0.3s ease;
+}
+.accordion label:hover {
+    background: rgb(175, 175, 175);
+}
+.insidecontainer {
+    display: block;
+    height: 0px;
+    padding: 0px 15px;
+    background: grey;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+.accordionholder input:checked ~ .insidecontainer {
+    height: 80px;
+    overflow: scroll;
+}
+.input[type=checkbox] + label::after{
+    content: '+';
+}
+.input[type=checkbox]:checked + label::after{
+    content: '-';
+}
+.block3, .block4 {
+    text-align: left;
+    width: 570px;
+    height: 430px;
+    margin: 20px 30px 0px 0px;
+}
+h3 {
+    text-transform: uppercase;
+    font-size: 16px;
+}
+h5 {
+    font-size: 16px;
+    text-transform: none;
+    font-weight: normal;
+}
+.block3 img, .block4 img {
+    float: left;
+    padding: 20px 30px 30px 0px; 
+}
+.raw2 {
+    display: flex;
+    justify-content: left;
+}
+footer {
+    display: flex;
+    justify-content: left;
+    background: rgb(236, 236, 236);
+}
+.bl_1 a {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    color: rgb(42, 42, 42);
+}
+.bl_1 {
+    display: flex;
+    justify-content: left;
+    width: 570px;
+    height: 220px;
+}
+.bl1_1, .bl1_2, .bl1_3 {
+    width: 170px;
+}
+.bl_2 {
+    text-transform: uppercase;
+    font-weight: bold; 
+}
+ /*как применить к кнопке?*/{
+    background: rgba(19, 187, 230, 0.966);
+    width: 45px;
+    height: 25px;
+    color: white;
+    padding: 10px;
+    border-radius: 0px 10px 10 px 0px;
+    text-align: center;
+}
+.bl_3 i {
+    background-color:  rgba(19, 187, 230, 0.966);
+    color: white;
+    width: 36px;
+    height: 26px;
+    border-radius: 18px;
+    text-align: center;
+    font-size: 16px;
+    padding-top: 10px;
+}
+.bl_3 h3 {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.bl_2, .bl_3 {
+    width: 270px;
+    height: 220px;
+    margin: 0px 0px 0px 30px;
+}
